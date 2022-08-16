@@ -1,4 +1,4 @@
-package com.prince.jsondatacreator.config;
+package com.prince.jsondatacreator;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;

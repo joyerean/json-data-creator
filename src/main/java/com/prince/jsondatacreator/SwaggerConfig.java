@@ -1,4 +1,4 @@
-package com.prince.jsondatacreator.config;
+package com.prince.jsondatacreator;
 
 import org.springdoc.core.GroupedOpenApi;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package com.prince.jsondatacreator.config;
+package com.prince.jsondatacreator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

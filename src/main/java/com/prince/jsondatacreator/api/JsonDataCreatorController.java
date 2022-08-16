@@ -4,6 +4,7 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.prince.jsondatacreator.model.Person;
@@ -21,7 +22,7 @@ public class JsonDataCreatorController {
 	
 	@Operation(summary = "Create random person data with a given count")
 	@GetMapping(path = "/getRandomData")
-	public Map<String, Person> getRandomJsonData(long count) {
+	public Map<String, Person> getRandomJsonData(@RequestParam long count) {
 		return dataCreatorService.createRandomJsonData(count);
 	}
 
