@@ -1,9 +1,10 @@
-package com.prince.jsondatacreator;
+package com.prince.jsondatacreator.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
-@SpringBootApplication
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 public class JsonDataCreatorApplication {
 
 	public static void main(String[] args) {
